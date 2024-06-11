@@ -15,6 +15,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: "The Universe Docs",
   },
+  docsRepositoryBase: "https://github.com/reality-exe/universe-docs",
 };
 
 export default config;

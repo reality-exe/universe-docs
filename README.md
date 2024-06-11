@@ -1,23 +1,12 @@
-# Nextra Docs Template 
+# How to contribute
+In order to contribute, you will need to do the following:
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+- [ ] Install NodeJS (18.17 or later)
+- [ ] Clone This Repository
+- [ ] Install Next: `npm i next`
+- [ ] Run local dev site `npm run dev`
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+Once you've made your desired changes, just create a PR with an appropriate title and if there's no problems I will push it.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+# Nextra
+In order to format pages, please follow the guides provided by Nextra, [located here](https://nextra.site/docs/guide).

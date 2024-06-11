@@ -1,0 +1,74 @@
+import { Callout, Cards, Card } from "nextra/components";
+
+# Stargate Setup
+Learn how to setup a stargate in-session or cross-session
+
+## Local In-Session Setup
+### Requirements
+- Any type of [stargate](/aor/stargate_system#types-of-stargates).
+- A DHD of the same type
+    - _With the MilkyWay gate type you can use either the normal DHD or the SGC computer_
+- Enough room for the stargate (It's pretty big)
+- And optionally a ramp of your choosing.
+
+### Setup
+1. Place the gate and the DHD in the location you want.
+    - When using a ramp the stargate will snap into place.
+2. Use the grabbable setter tool to make the stargate and related objects not grabbable.
+3. Find the setup dialog on the stargate and the DHD.
+4. Grab the slot reference from the DHD setup dialog and place it into the DHD input on the gate setup dialog.
+5. Input a valid stargate address.
+    - Must be six unique characters and not taken by another stargate.
+6. (MilkyWay Stargate Only) Optionally select your Point of Origin.
+7. Press the button at the bottom of the setup dialog.
+
+## Cross-Session Setup
+<Callout type="warning" emoji="⚠️">
+    The cross-session function of the stargates is meant for headless sessions.
+    **If the gate is on a user-hosted session and the host focuses to another world the gate will cease to function.**
+</Callout>
+<Callout type="info" emoji="ℹ️">
+    You must allow the websocket URL (`wss://gates.rxserver.net/`).
+    If the session is on a headless client add the URL to the "allowedUrlHosts" array in the headless config.
+    If you do not own the headless contact the owner and ask (Kindly) to add the URL and restart the session.
+</Callout>
+### Requirements
+- Any type of [stargate](/aor/stargate_system#types-of-stargates).
+- A DHD of the same type
+    - _With the MilkyWay gate type you can use either the normal DHD or the SGC computer_
+- Enough room for the stargate (It's pretty big)
+- And optionally a ramp of your choosing.
+- **Session must be set to "Anyone" or "Registered Users"
+
+### Setup
+This setup method is a one time thing and will have to be redone everytime the world starts.
+
+1. Place the gate and the DHD in the location you want.
+    - When using a ramp the stargate will snap into place.
+2. Use the grabbable setter tool to make the stargate and related objects not grabbable.
+3. Find the setup dialog on the stargate and the DHD.
+4. Grab the slot reference from the DHD setup dialog and place it into the DHD input on the gate setup dialog.
+5. Input a valid stargate address.
+    - Must be six unique characters and not taken by another stargate.
+    - If the stargate address is already taken by another cross-session stargate the setup dialog will show itself again.
+6. (MilkyWay Stargate Only) Optionally select your Point of Origin.
+7. Enable the cross-session checkbox.
+9. Fill in the name of your choosing.
+10. Press the button at the bottom of the setup dialog
+    - You may also have to allow the websocket host.
+
+### Auto-Setup
+This setup method will setup the gate every time the world starts.
+
+1. [Follow the first setup steps](#setup-1)
+2. Spawn the Auto-Setup Script.
+3. Place the same info you used for the gate setup into the auto-setup dialog.
+4. Use a developer tooltip to grab the slot reference of the stargate and place into the "Primary Stargate" input of the auto-setup script.
+5. Save the world.
+6. Restart the world once synced.
+7. Check to see if your gate is on [the public gate list](https://sgn.rxserver.net). If it isnt press the "Reconnect" button on the auto-setup script. If that still doesnt work DM or ping Detective, Virgil, or Climber in our [Discord](https://discord.gg/RtwD48gtGS) server.
+
+<Cards>
+    <Card title="Stargate System" href="/aor/stargate_system" />
+    <Card title="Discord Server" href="https://discord.gg/RtwD48gtGS" />
+</Cards>

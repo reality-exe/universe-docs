@@ -9,13 +9,13 @@ const config: DocsThemeConfig = {
     toggleButton: true,
   },
   logo: <img src="/images/Universe.png" width="45" />,
-  chat: {
-    link: "https://sh.rxserver.net/discord",
+  project: {
+    link: "https://github.com/reality-exe/universe-docs"
   },
   footer: {
     text: "The Universe Docs",
   },
-  docsRepositoryBase: "https://github.com/reality-exe/universe-docs",
+  docsRepositoryBase: "https://github.com/reality-exe/universe-docs/tree/main",
 };
 
 export default config;

@@ -1,0 +1,44 @@
+import { Callout } from 'nextra/components'
+
+<Callout type="info">
+    Base API URL is `https://api.rxserver.net/`
+</Callout>
+
+## /stargates/paged
+Returns a specific gate based on the gate address
+
+### Query Params
+| query   |  type  | default |
+| :----   | :----: | ------: |
+| page    | number |     1   |
+| limit   | number |    10   |
+
+```json filename="Example Response"
+{
+  "page": 1,
+  "perPage": 10,
+  "totalItems": 3,
+  "totalPages": 1,
+  "items": [
+    {
+      "active_users": 1,
+      "collectionId": "91obylcwcwbu0ls",
+      "collectionName": "stargates",
+      "created": "2024-06-11 17:20:03.457Z",
+      "field_to_update": 0.8758858510017382,
+      "gate_address": "AEN2ZU",
+      "gate_code": "M@",
+      "gate_status": "OPEN",
+      "id": "tvnwd0m1c4fe8zy",
+      "iris_state": false,
+      "is_headless": true,
+      "max_users": 25,
+      "owner_name": "Ancients Of Resonite",
+      "public_gate": true,
+      "session_name": "Stargate Command",
+      "session_url": "ressession:///S-5ff31cf7-10e0-472d-908d-660fe69ab617",
+      "updated": "2024-06-11 19:48:06.353Z"
+    }
+  ]
+}
+```

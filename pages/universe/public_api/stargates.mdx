@@ -1,0 +1,33 @@
+import { Callout } from 'nextra/components'
+
+<Callout type="info">
+    Base API URL is `https://api.rxserver.net/`
+</Callout>
+
+## /stargates
+Returns a full array of all public stargates
+
+
+```json filename="Example Response"
+[
+    {
+    "active_users": 2,
+    "collectionId": "91obylcwcwbu0ls",
+    "collectionName": "stargates",
+    "created": "2024-06-11 17:20:05.506Z",
+    "field_to_update": 0.7111909081674288,
+    "gate_address": "4R6OX8",
+    "gate_code": "M@",
+    "gate_status": "IDLE", # IDLE | OPEN | INCOMING7-9
+    "id": "6qkrzcbztmvy5t2",
+    "iris_state": false,
+    "is_headless": true,
+    "max_users": 25,
+    "owner_name": "Ancients Of Resonite",
+    "public_gate": true,
+    "session_name": "Abydos",
+    "session_url": "ressession:///S-4305ffb8-2cc2-4573-8fcc-818c1b46b699",
+    "updated": "2024-06-11 19:45:28.730Z"
+  }
+]
+```

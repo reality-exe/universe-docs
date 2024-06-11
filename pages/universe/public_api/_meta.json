@@ -1,0 +1,5 @@
+{
+    "stargate":"/stargate/:address",
+    "stargates":"/stargates",
+    "paged":"/stargates/paged"
+}

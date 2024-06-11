@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  primaryHue: 260,
+  primaryHue: 284,
   primarySaturation: 90,
   sidebar: {
     autoCollapse: true,

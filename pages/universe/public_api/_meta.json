@@ -1,5 +1,3 @@
 {
-    "stargate":"/stargate/:address",
-    "stargates":"/stargates",
-    "paged":"/stargates/paged"
+    "stargate":"Stargate Endpoints"
 }
